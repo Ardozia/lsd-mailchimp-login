@@ -1,26 +1,58 @@
+:root {
+  --bs-primary: #007c89;
+  --bs-light: #f6f6f4;
+  --bs-light-rgb: 246, 246, 244;
+
+  /*  Links colors */
+  --bs-link-color-rgb: 0, 124, 137;
+  --bs-link-color: #007c89;
+  --bs-link-hover-color-rgb: 0, 78, 86;
+  --bs-link-hover-color: #004e56;
+}
+
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #007c89;
+  --bs-btn-border-color: #007c89;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #006570;
+  --bs-btn-hover-border-color: #006570;
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #004e56;
+  --bs-btn-active-border-color: #004e56;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #007c89;
+  --bs-btn-disabled-border-color: #007c89;
+}
 
 h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 .fs-custom {
-    font-size: 0.75em !important;
-}
-
-
-.bck-image {
-    background-image: url(/images/phpza0iJx.jpeg);
-    background-size: cover;
+  font-size: 0.75em !important;
 }
 
 .icon-size {
-    width: 40px;
+  width: 40px;
 }
 
-.border-custom {
-    border-left: 8px;
-    border-color: rgb(232, 204, 28) ;
-    border-style: solid;
-    border-top: 0;
-    border-bottom: 0;
+.bv {
+  border: 0;
+  border-left: 8px;
+  border-color: rgb(232, 204, 28);
+  border-style: solid;
+}
+.bh {
+  border: 0;
+  border-top: 8px;
+  border-color: rgb(232, 204, 28);
+  border-style: solid;
+}
+
+input[type="checkbox"] {
+  width: 26px;
+  height: 26px;
 }
