@@ -1,0 +1,26 @@
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.fs-custom {
+    font-size: 0.75em !important;
+}
+
+
+.bck-image {
+    background-image: url(/images/phpza0iJx.jpeg);
+    background-size: cover;
+}
+
+.icon-size {
+    width: 40px;
+}
+
+.border-custom {
+    border-left: 8px;
+    border-color: rgb(232, 204, 28) ;
+    border-style: solid;
+    border-top: 0;
+    border-bottom: 0;
+}
