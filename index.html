@@ -48,6 +48,7 @@
                 <label for="exampleInputEmail1" class="form-label">Username or Email</label>
                 <input type="email" class="form-control form-control-lg" id="exampleInputEmail1"
                   aria-describedby="emailHelp" required>
+                <label class="form-label invalid-feedback">Email inválido</label>
               </div>
               <div class="mb-3">
                 <div class="d-flex justify-content-between align-items-center">
@@ -59,7 +60,9 @@
                     </button>
                   </div>
                 </div>
-                <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" required>
+                <input type="password" class="form-control form-control-lg" id="exampleInputPassword1"
+                  pattern="^(?=.*[#])[A-Za-z\d#]{8,}$" required>
+                <label class="form-label invalid-feedback">Password inválida</label>
               </div>
 
               <div class="form-check">
@@ -99,42 +102,42 @@
     crossorigin="anonymous"></script>
   <script>
     // Example starter JavaScript for disabling form submissions if there are invalid fields
-    // (() => {
-    //   'use strict'
+    (() => {
+      'use strict'
 
-    //   // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    //   const forms = document.querySelectorAll('.needs-validation')
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      const forms = document.querySelectorAll('.needs-validation')
 
-    //   // Loop over them and prevent submission
-    //   Array.from(forms).forEach(form => {
-    //     form.addEventListener('submit', event => {
-    //       if (!form.checkValidity()) {
-    //         event.preventDefault()
-    //         event.stopPropagation()
-    //       }
+      // Loop over them and prevent submission
+      Array.from(forms).forEach(form => {
+        form.addEventListener('submit', event => {
+          if (!form.checkValidity()) {
+            event.preventDefault()
+            event.stopPropagation()
+          }
 
-    //       form.classList.add('was-validated')
-    //     }, false)
-    //   })
-    // })()
+          form.classList.add('was-validated')
+        }, false)
+      })
+    })()
 
     //document.querySelector('.needs-validation').addEventListener('submit', handleSubmit)
-    document.querySelector('.needs-validation').onsubmit = handleSubmit
+    // document.querySelector('.needs-validation').onsubmit = handleSubmit
 
-    function handleSubmit(event) {
-      let alert = document.querySelector('.alert')
-      let email = document.getElementById('exampleInputEmail1')
-      let pwd = document.getElementById('exampleInputPassword1')
+    // function handleSubmit(event) {
+    //   let alert = document.querySelector('.alert')
+    //   let email = document.getElementById('exampleInputEmail1')
+    //   let pwd = document.getElementById('exampleInputPassword1')
 
-      if (email.value == "" || email.value.indexOf("@") == -1) {
-        alert.textContent = "Email inválido"
-        alert.classList.remove('d-none')
-        event.preventDefault()
-      } else {
-        alert.classList.add('d-none')
-      }
+    //   if (email.value == "" || email.value.indexOf("@") == -1) {
+    //     alert.textContent = "Email inválido"
+    //     alert.classList.remove('d-none')
+    //     event.preventDefault()
+    //   } else {
+    //     alert.classList.add('d-none')
+    //   }
 
-    }
+    // }
 
   </script>
 
