@@ -10,7 +10,7 @@
   --bs-secondary: #6c757d;
   --bs-secondary-rgb: 108, 117, 125;
   
-  --bs-light: #b2b24d;
+  --bs-light: #f6f6f4;
   --bs-light-rgb: 246, 246, 244;
   
   --bs-dark: #212529;
@@ -26,7 +26,7 @@
   /* ====== CUSTOM ====== */
   --accent-yellow: rgb(232, 204, 28);
 
-  --bs-input-border-radius: 4px;
+  --bs-border-radius-lg: 4px;
 }
 
 /* Override Bootstrap's primary button with CSS variables */
@@ -82,6 +82,10 @@
 .form-check-input:focus {
   border-color: var(--bs-primary);
   box-shadow: 0 0 0 0.25rem rgba(var(--bs-primary-rgb), 0.25);
+}
+
+.fs-custom {
+  font-size: 0.7rem;
 }
 
 h1 {
