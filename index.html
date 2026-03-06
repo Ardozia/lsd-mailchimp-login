@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrap demo</title>
+  <title>Mailchimp Login</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -30,59 +30,46 @@
           </form>
         </div>
       </div>
-      <div class="mx-0 mx-md-auto border border-1 rounded-4 p-5 bg-white">
+      <div class="mx-0 mx-md-auto border border-1 rounded-3 p-4 bg-white">
         <div class="d-flex w-100 flex-column justify-content-between">
-
-          <h1 class="display-5">Log in</h1>
-          <div class="d-flex flex-column my-3">
-            <p class="fs-custom m-0 ">Need a Mailchimp account? <a class="link-offset-2 " href="#">Create an
+          <div class="w-50 m-auto"><img class="img-fluid" src="images/mc-rewards-text-dark_resized_compressed.webp" /></div>
+          <div class="my-3 mx-auto"><h5 class="">Log In to Mailchimp</h5></div>
+          <div class="d-flex flex-column my-2">
+            <p class="m-0 ">Need a Mailchimp account? <a class="link-offset-2 " href="#">Create an
                 account</a></p>
           </div>
           <form class="d-flex flex-column mt-4">
             <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Username or Email</label>
+              <label for="exampleInputEmail1" class="form-label fw-semibold">Username or Email</label>
               <input type="email" class="form-control form-control-lg" id="exampleInputEmail1"
                 aria-describedby="emailHelp">
             </div>
-            <div class="mb-3">
-              <div class="d-flex justify-content-between align-items-center">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <div>
-                  <button class="btn btn-link text-decoration-none">
-                    <i class="bi bi-eye"></i>
-                    <span>Show</span>
-                  </button>
-                </div>
-              </div>
-              <input type="password" class="form-control form-control-lg" id="exampleInputPassword1">
+
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary px-5 my-2">
+                <span class="">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 0a4 4 0 0 1 4 4v2.05a2.5 2.5 0 0 1 2 2.45v5a2.5 2.5 0 0 1-2.5 2.5h-7A2.5 2.5 0 0 1 2 13.5v-5a2.5 2.5 0 0 1 2-2.45V4a4 4 0 0 1 4-4M4.5 7A1.5 1.5 0 0 0 3 8.5v5A1.5 1.5 0 0 0 4.5 15h7a1.5 1.5 0 0 0 1.5-1.5v-5A1.5 1.5 0 0 0 11.5 7zM8 1a3 3 0 0 0-3 3v2h6V4a3 3 0 0 0-3-3"/>
+                  </svg>
+                </span>
+                Log In
+              </button>
             </div>
 
-            <div class="form-check">
-              <input class="form-check-input rounded-0 " type="checkbox" value="" id="flexCheckDefault">
-              <label class="form-check-label ms-2 mt-1 fw-semibold" for="flexCheckDefault">
-                Keep me Logged In
-              </label>
-            </div>
-
-            <div class="d-grid d-md-block ">
-              <button type="submit" class="btn btn-primary px-5 rounded-pill my-4 py-2">Log In</button>
-            </div>
-
-            <div class="row text-center my-3 fs-custom">
+            <div class="row text-center my-3">
               <div class="col"><a class="link-offset-2" href="#">Forgot username?</a></div>
               <div class="col"><a class="link-offset-2" href="#">Forgot password?</a></div>
-              <div class="col"><a class="link-offset-2" href="#">Can't Log In?</a></div>
             </div>
           </form>
           <hr />
           <div>
-            <p class="fs-custom m-0">Or, if you created your Mailchimp account with Google:</p>
-            <div class="position-relative">
-              <img class="position-absolute top-50 start-0 translate-middle-y"
-                src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/crm/appointments/appointments-google-logo.svg"
-                width="40px" alt="" height="25px">
-              <button
-                class="btn btn-outline-secondary px-5 rounded-pill my-4 py-2 fs-custom fw-bold text-nowrap">Continue
+            <p class="m-0">Or, if you created your Mailchimp account with Google:</p>
+            <div class="d-grid position-relative mt-3">
+              <button class="btn btn-outline-primary px-5 py-3 fw-bold text-nowrap">
+                <img class="position-absolute top-50 start-0 translate-middle-y ms-3"
+                  src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/crm/appointments/appointments-google-logo.svg"
+                  width="30px" alt="" height="30px">
+                Continue
                 with
                 Google</button>
             </div>
@@ -91,7 +78,7 @@
       </div>
     </div>
     <div>
-      <div class="ms-4 text-secondary fs-custom py-2">
+      <div class="ms-4 text-secondary py-2">
         <label>© 2001–2023 All Rights Reserved. Mailchimp® is a registered trademark of The Rocket Science Group,
           LLC. Cookie Preferences, Privacy, and Terms.</label>
       </div>

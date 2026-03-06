@@ -2,6 +2,7 @@
   /* ====== BRAND COLORS ====== */
   --bs-primary: #007c89;
   --bs-primary-rgb: 0, 124, 137;
+
   --bs-primary-hover: #006570;
   --bs-primary-active: #004e56;
   --bs-primary-active-rgb: 0, 78, 86;
@@ -9,7 +10,7 @@
   --bs-secondary: #6c757d;
   --bs-secondary-rgb: 108, 117, 125;
   
-  --bs-light: #f6f6f4;
+  --bs-light: #b2b24d;
   --bs-light-rgb: 246, 246, 244;
   
   --bs-dark: #212529;
@@ -24,6 +25,8 @@
 
   /* ====== CUSTOM ====== */
   --accent-yellow: rgb(232, 204, 28);
+
+  --bs-input-border-radius: 4px;
 }
 
 /* Override Bootstrap's primary button with CSS variables */
@@ -39,6 +42,7 @@
   --bs-btn-active-border-color: var(--bs-primary-active);
   --bs-btn-disabled-bg: var(--bs-primary);
   --bs-btn-disabled-border-color: var(--bs-primary);
+  --bs-btn-border-radius: 4px;
 }
 
 /* Override outline-primary button */
@@ -84,10 +88,6 @@ h1 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
-.fs-custom {
-  font-size: 0.75em !important;
-}
-
 .icon-size {
   width: 40px;
 }
@@ -105,7 +105,3 @@ h1 {
   border-style: solid;
 }
 
-input[type="checkbox"] {
-  width: 26px;
-  height: 26px;
-}
