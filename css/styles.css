@@ -15,7 +15,10 @@
   
   --bs-dark: #212529;
   --bs-dark-rgb: 33, 37, 41;
-    
+  
+ /* Font */
+  --bs-body-font-family: Helvetica, Arial, sans-serif;
+
   /* ====== LINKS ====== */
   --bs-link-color: var(--bs-primary);
   --bs-link-color-rgb: var(--bs-primary-rgb);
